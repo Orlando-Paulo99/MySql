@@ -16,8 +16,15 @@ describe  tbusuarios;
 --create->insere
 insert into tbusuarios(iduser,usuario,fone,login,
 senha)
-values(1,'orlando paulo','992624419','orlandinho','12345');
+values(2,'Pedro Rafael','988111121','rafacoca','55551010');
 --exibe dados da tabela(crud)
 --read =>seleciona
 SELECT *  FROM tbusuarios;
+--modificando algo na tabela(CRUD)
+--update 
+update tbusuarios set login='rafacocao' where iduser=2;
+--apagando registroda tabela(CRUD)
+--delete 
+delete from tbusuarios where iduser=2;
+
 
