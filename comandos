@@ -1,0 +1,23 @@
+--criando um banco de dados		
+create database dbinfox;
+--escolhendo o banco que ira ser ulttilizado
+use dbinfox;
+--criando tabela
+create table tbusuarios(
+iduser int primary key,
+usuario varchar(50)not null,
+fone varchar(15),
+login varchar(15)not null unique,
+senha varchar(15)not null
+);
+--DESCRVRE A TABELA
+describe  tbusuarios;
+--inserindo dados na tabela(CRUD)
+--create->insere
+insert into tbusuarios(iduser,usuario,fone,login,
+senha)
+values(1,'orlando paulo','992624419','orlandinho','12345');
+--exibe dados da tabela(crud)
+--read =>seleciona
+SELECT *  FROM tbusuarios;
+
